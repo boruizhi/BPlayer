@@ -1,4 +1,4 @@
-.yzmplayer-info-panel-item-url,.yzmplayer-info-panel-item-title-amount,.yzmplayer-full .yzmplayer-full-in-icon,.dmrules,#link3-error {
+.yzmplayer-info-panel-item-danmaku-id,.yzmplayer-info-panel-item-url,.yzmplayer-info-panel-item-title-amount,.yzmplayer-full .yzmplayer-full-in-icon,.dmrules,#link3-error {
 	display: none;
 }
 .yzmplayer-controller .yzmplayer-icons .yzmplayer-toggle .showdan-setting .yzmplayer-setting-showdan input:not(:checked)+label:after {
