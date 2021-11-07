@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8"><meta name="referrer" content="never">
+    <title>博睿播放器</title>
+    <meta name="renderer" content="webkit">
+    <meta name="theme-color" content="#de698c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="applicable-device" content="mobile">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <link rel="shortcut icon" href="https://www.caoborui.xyz/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/caoborui.css">
+    <link rel="stylesheet" href="css/caoborui.beautify.css">
+    <link rel="stylesheet" href="css/caoborui.min.css">
+    <script src="js/caoborui.js" charset="utf-8"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/setting.js" charset="utf-8"></script>
+    <script src="js/hls.min.js"></script>
+    <script src="js/flv.min.js"></script>
+    <script src="js/layer.js"></script>
+    <script type="text/javascript">var video = window.location.href.split("url=")[1];</script>
+</head>
+<body>
+    <div id="player"></div>
+    <div id="ADplayer"></div>
+    <div id="ADtip"></div>
+    <script>
+        var up = {
+            "mylink": "/player/?url=", //播放器路径，用于下一集
+            "diyid": [0, '游客', 1] //自定义弹幕id
+        }
+        var config = {
+            "api": '//www.caoborui.xyz/dmku/',
+	    "av": '',
+            "url":video,
+            "id":video,
+	    "sid": "",
+	    "title": "",
+            "pic": "https://www.caoborui.xyz/img.php",
+	    "next": "",
+	    "user": '',
+	    "group": "",
+        }
+        YZM.start()
+    </script>
+</body>
+</html>
