@@ -1,302 +1,8 @@
-/* Caoborui Player 美化CSS And Api.caoborui.xyz Images*/
+/* Caoborui Player Beautify CSS */
 @charset="UTF-8";
-.mdui-progress {
-	position: relative;
-	display: block;
-	width: 100%;
-	height: 4px;
-	overflow: hidden;
-	background-color: rgba(63, 81, 181, 0.2);
-	border-radius: 2px;
-}
-.mdui-progress-determinate {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	background-color: #03A9F4;
-	-webkit-transition: width 0.3s linear;
-	transition: width 0.3s linear;
-}
-.mdui-progress-indeterminate {
-	background-color: #03A9F4;
-}
-
-.mdui-progress-indeterminate::before {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	background-color: inherit;
-	-webkit-animation: mdui-progress-indeterminate 2s linear infinite;
-	animation: mdui-progress-indeterminate 2s linear infinite;
-	content: ' ';
-	will-change: left, width;
-}
-
-.mdui-progress-indeterminate::after {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	background-color: inherit;
-	-webkit-animation: mdui-progress-indeterminate-short 2s linear infinite;
-	animation: mdui-progress-indeterminate-short 2s linear infinite;
-	content: ' ';
-	will-change: left, width;
-}
-
-@-webkit-keyframes mdui-progress-indeterminate {
-	0% {
-		left: 0;
-		width: 0;
-	}
-
-	50% {
-		left: 30%;
-		width: 70%;
-	}
-
-	75% {
-		left: 100%;
-		width: 0;
-	}
-}
-
-@keyframes mdui-progress-indeterminate {
-	0% {
-		left: 0;
-		width: 0;
-	}
-
-	50% {
-		left: 30%;
-		width: 70%;
-	}
-
-	75% {
-		left: 100%;
-		width: 0;
-	}
-}
-
-@-webkit-keyframes mdui-progress-indeterminate-short {
-	0% {
-		left: 0;
-		width: 0;
-	}
-
-	50% {
-		left: 0;
-		width: 0;
-	}
-
-	75% {
-		left: 0;
-		width: 25%;
-	}
-
-	100% {
-		left: 100%;
-		width: 0;
-	}
-}
-
-@keyframes mdui-progress-indeterminate-short {
-	0% {
-		left: 0;
-		width: 0;
-	}
-
-	50% {
-		left: 0;
-		width: 0;
-	}
-
-	75% {
-		left: 0;
-		width: 25%;
-	}
-
-	100% {
-		left: 100%;
-		width: 0;
-	}
-}
-.mdui-theme-primary-amber .mdui-progress {
-	background-color: rgba(255, 193, 7, 0.2);
-}
-
-.mdui-theme-primary-amber .mdui-progress-determinate,
-.mdui-theme-primary-amber .mdui-progress-indeterminate {
-	background-color: #FFC107;
-}
-
-.mdui-theme-primary-blue .mdui-progress {
-	background-color: rgba(33, 150, 243, 0.2);
-}
-
-.mdui-theme-primary-blue .mdui-progress-determinate,
-.mdui-theme-primary-blue .mdui-progress-indeterminate {
-	background-color: #2196F3;
-}
-
-.mdui-theme-primary-blue-grey .mdui-progress {
-	background-color: rgba(96, 125, 139, 0.2);
-}
-
-.mdui-theme-primary-blue-grey .mdui-progress-determinate,
-.mdui-theme-primary-blue-grey .mdui-progress-indeterminate {
-	background-color: #607D8B;
-}
-
-.mdui-theme-primary-brown .mdui-progress {
-	background-color: rgba(121, 85, 72, 0.2);
-}
-
-.mdui-theme-primary-brown .mdui-progress-determinate,
-.mdui-theme-primary-brown .mdui-progress-indeterminate {
-	background-color: #795548;
-}
-
-.mdui-theme-primary-cyan .mdui-progress {
-	background-color: rgba(0, 188, 212, 0.2);
-}
-
-.mdui-theme-primary-cyan .mdui-progress-determinate,
-.mdui-theme-primary-cyan .mdui-progress-indeterminate {
-	background-color: #00BCD4;
-}
-
-.mdui-theme-primary-deep-orange .mdui-progress {
-	background-color: rgba(255, 87, 34, 0.2);
-}
-
-.mdui-theme-primary-deep-orange .mdui-progress-determinate,
-.mdui-theme-primary-deep-orange .mdui-progress-indeterminate {
-	background-color: #FF5722;
-}
-
-.mdui-theme-primary-deep-purple .mdui-progress {
-	background-color: rgba(103, 58, 183, 0.2);
-}
-
-.mdui-theme-primary-deep-purple .mdui-progress-determinate,
-.mdui-theme-primary-deep-purple .mdui-progress-indeterminate {
-	background-color: #673AB7;
-}
-
-.mdui-theme-primary-green .mdui-progress {
-	background-color: rgba(76, 175, 80, 0.2);
-}
-
-.mdui-theme-primary-green .mdui-progress-determinate,
-.mdui-theme-primary-green .mdui-progress-indeterminate {
-	background-color: #4CAF50;
-}
-
-.mdui-theme-primary-grey .mdui-progress {
-	background-color: rgba(158, 158, 158, 0.2);
-}
-
-.mdui-theme-primary-grey .mdui-progress-determinate,
-.mdui-theme-primary-grey .mdui-progress-indeterminate {
-	background-color: #9E9E9E;
-}
-
-.mdui-theme-primary-indigo .mdui-progress {
-	background-color: rgba(63, 81, 181, 0.2);
-}
-
-.mdui-theme-primary-indigo .mdui-progress-determinate,
-.mdui-theme-primary-indigo .mdui-progress-indeterminate {
-	background-color: #3F51B5;
-}
-
-.mdui-theme-primary-light-blue .mdui-progress {
-	background-color: rgba(3, 169, 244, 0.2);
-}
-
-.mdui-theme-primary-light-blue .mdui-progress-determinate,
-.mdui-theme-primary-light-blue .mdui-progress-indeterminate {
-	background-color: #03A9F4;
-}
-
-.mdui-theme-primary-light-green .mdui-progress {
-	background-color: rgba(139, 195, 74, 0.2);
-}
-
-.mdui-theme-primary-light-green .mdui-progress-determinate,
-.mdui-theme-primary-light-green .mdui-progress-indeterminate {
-	background-color: #8BC34A;
-}
-
-.mdui-theme-primary-lime .mdui-progress {
-	background-color: rgba(205, 220, 57, 0.2);
-}
-
-.mdui-theme-primary-lime .mdui-progress-determinate,
-.mdui-theme-primary-lime .mdui-progress-indeterminate {
-	background-color: #CDDC39;
-}
-
-.mdui-theme-primary-orange .mdui-progress {
-	background-color: rgba(255, 152, 0, 0.2);
-}
-
-.mdui-theme-primary-orange .mdui-progress-determinate,
-.mdui-theme-primary-orange .mdui-progress-indeterminate {
-	background-color: #FF9800;
-}
-
-.mdui-theme-primary-pink .mdui-progress {
-	background-color: rgba(233, 30, 99, 0.2);
-}
-
-.mdui-theme-primary-pink .mdui-progress-determinate,
-.mdui-theme-primary-pink .mdui-progress-indeterminate {
-	background-color: #E91E63;
-}
-
-.mdui-theme-primary-purple .mdui-progress {
-	background-color: rgba(156, 39, 176, 0.2);
-}
-
-.mdui-theme-primary-purple .mdui-progress-determinate,
-.mdui-theme-primary-purple .mdui-progress-indeterminate {
-	background-color: #9C27B0;
-}
-
-.mdui-theme-primary-red .mdui-progress {
-	background-color: rgba(244, 67, 54, 0.2);
-}
-
-.mdui-theme-primary-red .mdui-progress-determinate,
-.mdui-theme-primary-red .mdui-progress-indeterminate {
-	background-color: #F44336;
-}
-
-.mdui-theme-primary-teal .mdui-progress {
-	background-color: rgba(0, 150, 136, 0.2);
-}
-
-.mdui-theme-primary-teal .mdui-progress-determinate,
-.mdui-theme-primary-teal .mdui-progress-indeterminate {
-	background-color: #009688;
-}
-
-.mdui-theme-primary-yellow .mdui-progress {
-	background-color: rgba(255, 235, 59, 0.2);
-}
-
-.mdui-theme-primary-yellow .mdui-progress-determinate,
-.mdui-theme-primary-yellow .mdui-progress-indeterminate {
-	background-color: #FFEB3B;
-}
-
 @font-face {
 	font-family: 'yzmfont';
-    src: url('../fonts/caoborui.ttf');
+    src: url('../css/caoborui.ttf');
 }
 
 button[data-balloon] {
@@ -2251,7 +1957,7 @@ f .yzmplayer.yzmplayer-mobile .yzmplayer-controller .yzmplayer-icons .yzmplayer-
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 5%;
+	top: 0;
 	bottom: 10%;
 	font-size: 22px;
 	color: #fff;
@@ -2486,18 +2192,11 @@ f .yzmplayer.yzmplayer-mobile .yzmplayer-controller .yzmplayer-icons .yzmplayer-
 	display: none
 }
 
-@media (max-width:544px) {
-	.yzmplayer-info-panel {
-		left: 3%!important;
-		width: 90%!important;
-	}
-}
-
 .yzmplayer-info-panel {
 	position: absolute;
 	top: 35px;
 	left: 15px;
-	width: 375px;
+	width: 400px;
 	background: rgba(28, 28, 28, .8);
 	padding: 10px;
 	color: #99a2aa;
@@ -2517,7 +2216,8 @@ f .yzmplayer.yzmplayer-mobile .yzmplayer-controller .yzmplayer-icons .yzmplayer-
 	cursor: pointer;
 	position: absolute;
 	right: 10px;
-	top: 10px
+	top: 10px;
+	z-index: 1000;
 }
 
 .yzmplayer-info-panel .yzmplayer-info-panel-item>span {
@@ -2531,7 +2231,8 @@ f .yzmplayer.yzmplayer-mobile .yzmplayer-controller .yzmplayer-icons .yzmplayer-
 
 .yzmplayer-info-panel .yzmplayer-info-panel-item-title {
 	width: 100px;
-	text-align: left;
+	text-align: right;
+	margin-right: 10px
 }
 
 .yzmplayer-info-panel .yzmplayer-info-panel-item-data {
@@ -2949,7 +2650,7 @@ ul::-webkit-scrollbar-track {
 	-moz-animation: spinoffPulse .9s infinite linear;
 	-webkit-animation: unset;
 	background-size: 100%;
-	background-image: url(../img/load.gif);
+	background-image: url(../img/loading.gif);
 	top: 50%;
 	left: 50%;
 	height: 32px;
