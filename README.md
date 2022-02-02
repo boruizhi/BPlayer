@@ -1,2 +1,2 @@
-# Caoborui-Player
+# Borui-Player
 博睿播放器
