@@ -2694,7 +2694,7 @@ ul::-webkit-scrollbar-track {
 	height: 100%;
 	position: absolute;
 	z-index: 10000000001;
-	background: url(https://api.caoborui.xyz/random/pc.php) no-repeat center center;
+	background: url(https://www.caoborui.shop/random/pc.php) no-repeat center center;
    background-size:cover;
    background-attachment:fixed;
 }
