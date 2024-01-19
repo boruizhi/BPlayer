@@ -2284,7 +2284,7 @@ ul::-webkit-scrollbar-track {
     float: left;
 }
 .loading .pic {
-    background: url(../img/20200519223109.gif) no-repeat;
+    background: url(../img/loading.gif) no-repeat;
     width: 80px;
     height: 115px;
     background-size: 100%;
