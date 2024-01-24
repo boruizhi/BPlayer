@@ -22,7 +22,11 @@
     <script src="js/hls.min.js"></script>
     <script src="js/flv.min.js"></script>
     <script src="js/layer.js"></script>
-    <script type="text/javascript">var video = window.location.href.split("url=")[1];</script>
+    <script src="js/md5.min.js"></script>
+    <script type="text/javascript">
+	    var video = window.location.href.split("url=")[1];
+	    var videoid = md5(video);
+    </script>
 </head>
 <body style="font-family: 'HarmonyOS_Regular',sans-serif;">
     <div id="player"></div>
@@ -37,7 +41,7 @@
             "api": 'https://www.ikdmjx.com/dmku/',
 	    "av": '',
             "url":video,
-            "id":video,
+            "id":videoid,
 	    "sid": "",
 	    "title": "",
             "pic": "",
