@@ -2882,7 +2882,7 @@ n = Math.max(n, 0), n = Math.min(n, 1),
 								return [parseInt(a / 60 / 60), parseInt(a / 60 % 60), parseInt(a % 60)].join(":").replace(/\b(\d)\b/g,
 									"0$1")
 							}
-							this.template.infoVersion.innerHTML = "Caoborui Player V5.41.88", this.template.infoType.innerHTML = this.player.type, this.template
+							this.template.infoVersion.innerHTML = "BPlayer V1.45", this.template.infoType.innerHTML = this.player.type, this.template
 								.infoUrl.innerHTML = this.player.options.video.url, this.template.infoResolution.innerHTML = this.player
 								.video.videoWidth + " x " + this.player.video.videoHeight, this.template.infoDuration.innerHTML =
 								formatTime(this.player.video.duration), this.player.options.danmaku && (this.template.infoDanmakuId.innerHTML =
