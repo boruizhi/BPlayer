@@ -82,8 +82,7 @@ var YZM = {
 			a = up.diyid[1],
 				b = up.diyid[2]
 		}
-		//YZM.id = a + ' P' + b
-		YZM.id = a
+		YZM.id = a + ' P' + b
 	},
 	'load': function() {
 		setTimeout(function() {
