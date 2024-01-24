@@ -982,8 +982,8 @@
 						click: function(e) {
 							e.video.requestPictureInPicture();
 					}},{
-                        text: "曹博睿",
-                        link: "https://www.caoborui.xyz/",
+                        text: "BPlayer Github",
+                        link: "https://github.com/boruizhi/BPlayer",
                         }]), e
 			}
 		},
