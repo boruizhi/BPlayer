@@ -3150,3 +3150,9 @@ ul::-webkit-scrollbar-track {
 .yzmplayer-info-panel-item.yzmplayer-info-panel-item-danmaku-id {
     display: none;
 }
+.yzmplayer-icon.yzmplayer-list-icon {
+    display: none;
+}
+.yzmplayer-danmu.show {
+    display: none;
+}
