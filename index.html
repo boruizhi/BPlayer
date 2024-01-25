@@ -27,11 +27,6 @@
 	    var objUrlParams = new URLSearchParams(window.location.search);
 	    var video = objUrlParams.get('url');
 	    var videoid = md5(video);
-	    var nextlink = objUrlParams.get('next');
-	    var picurl = objUrlParams.get('pic');
-	    var titlename = objUrlParams.get('title');
-	    var avid = objUrlParams.get('av');
-	    var videosid = objUrlParams.get('sid');
     </script>
 </head>
 <body style="font-family: 'HarmonyOS_Regular',sans-serif;">
@@ -48,11 +43,11 @@
 	    "av":avid,
             "url":video,
             "id":videoid,
-	    "sid":videosid,
-	    "title":titlename,
-            "pic":picurl,
-	    "next":nextlink,
-	    "user": '',
+	    "sid": "",
+	    "title": "",
+            "pic": "",
+	    "next": "",
+	    "user": "",
 	    "group": "",
         }
         YZM.start()
