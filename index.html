@@ -24,8 +24,14 @@
     <script src="js/layer.js"></script>
     <script src="js/md5.min.js"></script>
     <script type="text/javascript">
-	    var video = window.location.href.split("url=")[1];
+	    var objUrlParams = new URLSearchParams(window.location.search);
+	    var video = objUrlParams.get('url');
 	    var videoid = md5(video);
+	    var nextlink = objUrlParams.get('next');
+	    var picurl = objUrlParams.get('pic');
+	    var titlename = objUrlParams.get('title');
+	    var avid = objUrlParams.get('av');
+	    var videosid = objUrlParams.get('sid');
     </script>
 </head>
 <body style="font-family: 'HarmonyOS_Regular',sans-serif;">
@@ -39,13 +45,13 @@
         }
         var config = {
             "api": 'https://www.ikdmjx.com/dmku/',
-	    "av": '',
+	    "av":avid,
             "url":video,
             "id":videoid,
-	    "sid": "",
-	    "title": "",
-            "pic": "",
-	    "next": "",
+	    "sid":videosid,
+	    "title":titlename,
+            "pic":picurl,
+	    "next":nextlink,
 	    "user": '',
 	    "group": "",
         }
